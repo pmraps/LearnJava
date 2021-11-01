@@ -18,8 +18,10 @@ public class InteractiveHello {
     public static void main(String[] args) {
         // make new object of class Scanner, based on System.in and call it input
         Scanner input = new Scanner(System.in);
+        System.out.print("Qual é o seu nome? ");
         System.out.print("Enter your name ==> ");                
         String yourName = input.nextLine();
         System.out.printf("Hello, %s!!!!!\n", yourName); // say hello
+        System.out.printf("\nOlá %s !!\n", yourName);
     }
 }

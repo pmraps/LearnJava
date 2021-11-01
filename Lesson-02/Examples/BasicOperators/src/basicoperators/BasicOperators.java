@@ -7,7 +7,7 @@ public class BasicOperators {
     public static void main(String[] args) {
         // Demonstrates basic arithmetic operators
         Scanner input = new Scanner(System.in);        
-        int x,y, result;
+        int x, y, result;
         System.out.print("Enter value for X : ");
         x = input.nextInt();
         System.out.print("Enter value for Y : ");

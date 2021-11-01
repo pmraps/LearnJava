@@ -13,7 +13,6 @@ There are 12 inches in 1 ft. so 75 inches is 6ft 3 inches
  */
 package basketballplayer;
 
-
 /**
  *
  * @author mafudge
@@ -25,7 +24,6 @@ public class BasketballPlayer {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
     }
     
 }

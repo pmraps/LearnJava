@@ -16,9 +16,9 @@ public class InteractiveCommonDataTypes {
         // declare our variables
         Scanner input = new Scanner(System.in);        
         String studentName;
-        int age;       
+        int age, retirement = 67, daysUntil;       
         double gpa;
-        boolean isFemale;
+        boolean isFemale, deansList;
         
         System.out.print("Enter student's name : ");
         studentName = input.nextLine();        
@@ -29,7 +29,7 @@ public class InteractiveCommonDataTypes {
         System.out.print("Is this student female? (true/false) : ");
         isFemale = input.nextBoolean();
                
-        System.out.printf("%s is %d years old. %s has a %4.3f gpa.\n",
+        System.out.printf("%s is %d years old, %s has a %4.3f gpa.\n",
                 studentName,
                 age,
                 (isFemale ? "She" : "He"),

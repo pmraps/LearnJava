@@ -26,6 +26,13 @@ public class FinalGradeInMET100 {
 
     public static void main(String[] args) {
        // TODO: Write solution here.
-        
+       int exam1 = 120, exam2 = 135, exam3 = 130;
+       int sum = exam1 + exam2 + exam3;
+       double percentage = (sum * 100) / 450;
+        System.out.println("Exam1 score: " + exam1);
+        System.out.println("Exam2 score: " + exam2);
+        System.out.println("Exam3 score: " + exam3);
+        System.out.println("Total points: " + sum);
+        System.out.printf("Percentage: %4.2f", percentage);    
     }
 }
