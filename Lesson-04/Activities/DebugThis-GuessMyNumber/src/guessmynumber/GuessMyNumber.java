@@ -16,18 +16,19 @@
  */
 package guessmynumber;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class GuessMyNumber {
 
-    public static void main(String[] args {
+    public static void main(String[] args) {
         int number, guess;
         Scanner input = new Scanner(System.in);
-        Random generator = random();
-        number = generator.nextInteger(5);
-        system.out.print("Pick a number between 1 and 5 : ")
+        Random generator = new Random();
+        number = generator.nextInt(5);
+        System.out.print("Pick a number between 1 and 5 : ");
         guess = input.nextInt();
-        string result = guess == number ? "You guessed it!\n" : "So close it was %d\n";
-        System.out.printf(result,number)
+        String result = guess == number ? "You guessed it!\n" : "So close it was %d\n";
+        System.out.printf("%d %d", result, number);
     }
 }

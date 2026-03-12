@@ -17,15 +17,15 @@
  */
 package oddoreven;
 
-import java.util.Scanner
+import java.util.Scanner;
 
 public class OddOrEven {
 
     public static void main(String[] args) {
-        Scanner input = new scanner(System.in);
-        System.out.print "Enter an integer : ";
+        Scanner input = new Scanner(System.in);
+        System.out.print ("Enter an integer : ");
         int i = input.nextInt();
-        string result =  i%3 == 0 ? "EVEN" : "ODD";
-        System.out.println("%d is %s\n",i,result);
+        String result =  i%3 == 0 ? "EVEN" : "ODD";
+        System.out.printf("%d is %s\n",i,result);
     }
 }

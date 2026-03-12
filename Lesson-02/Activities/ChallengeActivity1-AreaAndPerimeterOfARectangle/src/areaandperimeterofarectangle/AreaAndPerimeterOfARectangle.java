@@ -25,9 +25,16 @@ public class AreaAndPerimeterOfARectangle {
         // declare variables
 
         // get length and width with inputs
+        Scanner input = new Scanner(System.in);
         
-        // perform area, perimeter calculations
+        System.out.println("Insira a medida do primeiro lado: ");
+        double side1 = input.nextDouble();
+        System.out.println("");
+        System.out.println("Insira a medida do segundo lado: ");
+        double side2 = input.nextDouble();
+        System.out.println("");
         
-        // display outputs
+        // perform area, perimeter calculations and display outputs
+        System.out.printf("A área é %4.2f e o perímetro é %4.2f", side1 * side2, side1 * 2 + side2 * 2);
     }
 }

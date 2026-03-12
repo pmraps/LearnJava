@@ -23,5 +23,17 @@ public class PalindromeDetector {
 
     public static void main(String[] args) {
         // TODO: write code here
+        Scanner input = new Scanner(System.in);
+        StringBuilder sb = new StringBuilder();
+        
+        System.out.print("Insira a palavra a testar: ");
+        String palindrome = input.nextLine();
+        
+        sb.append(palindrome);
+        String reverse = sb.reverse().toString();
+        if (palindrome.equals(reverse)) {
+            System.out.println("That is a palindrome!");
+        } else 
+            System.out.println("That is not a palindrome!");
     }
 }

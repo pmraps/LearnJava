@@ -22,6 +22,7 @@ public class Circles {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        
         System.out.print("Enter Circle Radius : ");
         double radius = input.nextDouble();
         double circ = circleCircumference(radius,radius);

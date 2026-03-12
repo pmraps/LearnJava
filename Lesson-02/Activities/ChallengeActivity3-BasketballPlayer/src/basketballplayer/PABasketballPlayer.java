@@ -13,7 +13,6 @@ There are 12 inches in 1 ft. so 75 inches is 6ft 3 inches
  */
 package basketballplayer;
 
-import static com.hbcb.myconverters.MyUnitConverters.feet;
 import java.util.Scanner;
 
 /**
@@ -28,20 +27,19 @@ public class PABasketballPlayer {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);        
-        String name;
-        int average = 0, height = 0;
         
-        System.out.print("Enter the player's name: ");
-        name = input.nextLine();
+        System.out.println("Enter the player's name: ");
+        String name = input.nextLine();
+        System.out.println("");
         System.out.print("\nEnter the average points per game: ");
-        average = input.nextInt();
-        System.out.print("\nEnter the players height: ");
-        height = input.nextInt();
+        int average = input.nextInt();
+        System.out.println("");
+        System.out.print("\nEnter the players height (inches): ");
+        int height = input.nextInt();
+        System.out.println("");
         
-        System.out.printf("\nPlayer %s scores an average of %d points per game and measures %s",
-                name,
-                average,
-                feet(height));
+        System.out.printf("\nPlayer %s scores an average of %d points per game and measures %d feet and %d inches",
+                name, average, height/12, height % 12);
     }
     
 }

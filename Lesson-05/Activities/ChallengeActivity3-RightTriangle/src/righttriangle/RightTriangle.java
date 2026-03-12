@@ -18,12 +18,20 @@ Area: 6.000000; Perimeter: 12.000000
 package righttriangle;
 
 import java.util.Scanner;
+import static javax.swing.Spring.height;
 
 public class RightTriangle {
 
     public static void main(String[] args) {
         // TODO code application logic here get input, 
         // calculate area, perimeter then display output.
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Insira a base do triângulo: ");
+        double base = input.nextDouble();
+        System.out.print("Insira a altura do triângulo: ");
+        double height = input.nextDouble();
+        System.out.printf("A área do triângulo é %4.2f e o seu perímetro é %4.2f.\n", triangleArea(base, height), trianglePerimeter(base, height));
 
     }
     /**
@@ -32,8 +40,8 @@ public class RightTriangle {
      * @param b side b  length
      * @return the area as a double
      */
-    public static double triangleArea( int a, int b) {
-        return 0;
+    public static double triangleArea( double base, double height) {
+        return ((base * height) / 2);
     }
     
     /**
@@ -42,7 +50,8 @@ public class RightTriangle {
      * @param b side b length 
      * @return the perimeter as a double
      */
-    public static double trianglePerimeter( int a, int b) {
-        return 0;
+    public static double trianglePerimeter( double base, double height) {
+        // Teorema de Pitágoras
+        return (base + height + Math.sqrt(Math.pow(base, 2) + Math.pow(height, 2)));
     }
 }

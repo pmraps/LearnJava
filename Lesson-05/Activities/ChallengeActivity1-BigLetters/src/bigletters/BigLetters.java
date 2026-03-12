@@ -58,23 +58,44 @@ public class BigLetters {
     public static void main(String[] args) {
         // TODO: print "DAD" then "ADD" in big letters
         // do this by calling PrintDAD() and PrintADD
+        PrintADD();
+        PrintDAD();
     }
 
     public static void PrintADD() {
         //TODO: Write code to print ADD in big letters
         // by calling the PrintA() and PrintD() methods
+        PrintA();
+        PrintD();
+        PrintD();
     }
     
     public static void PrintDAD() {
         //TODO: Write code to print DAD in big letters, 
         // by calling the PrintA() and PrintD() methods
+        System.out.println("* ");
+        PrintD();
+        PrintA();
+        PrintD();
     }
-    
+ 
     public static void PrintA() {
         // TODO: Write code to print the letter "A" in big letters
+        System.out.println("*   X  ");
+        System.out.println("*  X X ");
+        System.out.println("* X   X");
+        System.out.println("* XXXXX");
+        System.out.println("* X   X");
+        System.out.println("* X   X");
     }
     
     public static void PrintD() {
         // TODO: Write code to print the letter "D" in big letters
+        System.out.println("* XXX  ");
+        System.out.println("* X  X ");
+        System.out.println("* X   X");
+        System.out.println("* X   X");
+        System.out.println("* X  X ");
+        System.out.println("* XXX  ");
     }
 }

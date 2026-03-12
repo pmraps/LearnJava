@@ -1,11 +1,15 @@
 package factorial;
 
+import java.util.Scanner;
+
 public class Factorial {
 
     public static void main(String[] args) {
-        int n = 5;
-        int result = factorial(n);
-        System.out.printf("%d factorial is %d\n", n,result);
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Calcular factorial de: ");
+        int calcFact = input.nextInt();
+        System.out.printf("O factorial de %d é %d\n", calcFact, factorial(calcFact));
     }
     
     /*

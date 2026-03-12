@@ -4,7 +4,7 @@
  */
 package interactivehello;
 
-import java.util.Scanner; // Bring in the scanner to read input
+import java.util.Scanner  // Bring in the scanner to read input
 
 /**
  *

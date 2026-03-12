@@ -22,6 +22,14 @@ public class AreaOfATriangle {
 
     public static void main(String[] args) {
 	// TODO : Write code here
-
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Insira a base do triângulo: ");
+        double base = input.nextDouble();
+        System.out.print("Insira a altura do triângulo: ");
+        double altura = input.nextDouble();
+        
+        double area = (base * altura) / 2;
+        System.out.printf("A área é %4.1f\n", area);
     }
 }

@@ -12,9 +12,11 @@ public class MethodBasics {
         length = input.nextInt();
         System.out.print("Enter Width : ");
         width = input.nextInt();
-        int per = rectanglePerimeter(length, width);
-        int area = rectangleArea(length, width);
-        System.out.printf("Area: %d; Perimeter: %d\n",area,per);
+        System.out.printf("Area: %d; Perimeter: %d\n", rectangleArea(length, width), rectanglePerimeter(length, width));
+        //int per = rectanglePerimeter(length, width);
+        //int area = rectangleArea(length, width);
+        //System.out.printf("Area: %d; Perimeter: %d\n", area, per);
+        
     }
     
     public static int rectangleArea( int someLength, int someWidth) {

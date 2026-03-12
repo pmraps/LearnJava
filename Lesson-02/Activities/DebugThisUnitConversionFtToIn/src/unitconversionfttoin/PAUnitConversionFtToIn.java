@@ -24,8 +24,8 @@ public class PAUnitConversionFtToIn {
         System.out.print("Enter a value in inches: ");
         int inputInches = input.nextInt();        
         
-        ft = inputInches % 12;
-        in = inputInches / 12;
+        ft = inputInches / 12;
+        in = inputInches % 12;
         
         System.out.printf("%d inches == %d feet %d inches\n"
                 , inputInches, ft, in);

@@ -24,6 +24,14 @@ public class RollTheDice {
     public static void main(String[] args) {
         // TODO: Roll two dice save roll in variables, check for doubles, and total
         // print results NOTE: be sure to call the roll() doubles() and total() methods
+        int roll1, roll2;
+        roll1 = roll();
+        roll2 = roll();
+        System.out.printf("Dice Roll: %d, %d; total: %d.", roll1, roll2, roll1 + roll2);
+        if (doubles(roll1, roll2)) {
+            System.out.println(" Doubles");
+        }
+        System.out.println("");
     }
     
     /**
@@ -33,7 +41,8 @@ public class RollTheDice {
      */
     public static int roll() {
         // TODO: Generate a random number between 1 and 6 then return the value
-        return 0;
+        Random rnd = new Random();
+        return rnd.nextInt(6) + 1;
     }
     
     /**
@@ -44,7 +53,7 @@ public class RollTheDice {
      */
     public static boolean doubles(int d1, int d2) {
         // TODO: return when dice are the same number for d1 and d2
-        return false;
+            return d1 == d2;
     }
     
     /**
@@ -55,6 +64,6 @@ public class RollTheDice {
      */
     public static int total(int d1, int d2) {
         // TODO: return the total value of the dice
-        return 0;
+        return d1 + d2;
     }
 }

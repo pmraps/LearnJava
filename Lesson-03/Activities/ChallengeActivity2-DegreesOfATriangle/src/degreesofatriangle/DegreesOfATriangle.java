@@ -26,5 +26,19 @@ public class DegreesOfATriangle {
 
     public static void main(String[] args) {
 	// TODO: Write code here
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Insira o 1º ângulo do triângulo: ");
+        double first = input.nextDouble();
+        System.out.print("Insira o 2º ângulo do triângulo: ");
+        double second = input.nextDouble();
+        System.out.print("Insira o 3º ângulo do triângulo: ");
+        double third = input.nextDouble();
+        double sum = first + second + third;
+        if (sum == 180) {
+            System.out.println("Tem um triângulo correcto!");
+        } else {
+            System.out.println("Não é um triângulo!");
+        }
     }
 }
